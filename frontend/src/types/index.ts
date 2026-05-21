@@ -9,7 +9,7 @@ export interface ZoneData {
 
 export interface FrameResult {
   type?: string;
-  frame: string; // base64 JPEG
+  frame: string;
   total_people: number;
   risk_level: RiskLevel;
   zones: ZoneData;

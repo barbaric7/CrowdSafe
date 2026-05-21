@@ -1,5 +1,5 @@
 import { useRef, useState, useCallback } from "react";
-import { FrameResult, ProcessingState } from "../types";
+import type { FrameResult, ProcessingState } from "../types/index";
 
 const WS_URL = "ws://localhost:8000/ws/video";
 

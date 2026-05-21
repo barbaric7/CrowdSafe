@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
-    "backend": "cd backend && crowdsafe/Scripts/python.exe -m uvicorn app:app --reload --port 8000",
+    "backend": "cd backend && python -m uvicorn app:app --reload --port 8000",
     "frontend": "cd frontend && npm run dev",
     "install:frontend": "cd frontend && npm install"
   },
