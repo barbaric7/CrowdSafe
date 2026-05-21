@@ -1,0 +1,14 @@
+{
+  "name": "crowdsafe",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "backend": "cd backend && crowdsafe/Scripts/python.exe -m uvicorn app:app --reload --port 8000",
+    "frontend": "cd frontend && npm run dev",
+    "install:frontend": "cd frontend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
