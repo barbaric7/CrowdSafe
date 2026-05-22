@@ -161,7 +161,7 @@ const needleAngle = smoothAngle; // -120 (low) to 120 (high) mapped to gauge arc
         }
         .rg-svg {
           width: 100%;
-          max-width: 220px;
+          max-width: 170px;
         }
         .rg-center {
           display: flex;
@@ -171,13 +171,13 @@ const needleAngle = smoothAngle; // -120 (low) to 120 (high) mapped to gauge arc
         }
         .rg-risk-label {
           font-family: var(--font-display);
-          font-size: 28px;
+          font-size: 22px;
           letter-spacing: 4px;
           line-height: 1;
         }
         .rg-count {
           font-family: var(--font-display);
-          font-size: 42px;
+          font-size: 32px;
           color: var(--text-primary);
           line-height: 1.1;
         }
@@ -204,7 +204,7 @@ const needleAngle = smoothAngle; // -120 (low) to 120 (high) mapped to gauge arc
         }
         .rg-pred-value {
           font-family: var(--font-display);
-          font-size: 22px;
+          font-size: 16px;
           letter-spacing: 1px;
         }
       `}</style>

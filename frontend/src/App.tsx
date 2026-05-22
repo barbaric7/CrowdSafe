@@ -268,26 +268,6 @@ export default function App() {
       {/* ── Header ── */}
       <header className="app-header">
         <div className="header-brand">
-          <div className="header-logo">
-            <svg viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <circle cx="18" cy="18" r="16" stroke="url(#hg)" strokeWidth="1.5" opacity="0.6" />
-              <path d="M18 6 C14 10 10 14 10 20 C10 26 14 30 18 30 C22 30 26 26 26 20 C26 14 22 10 18 6Z"
-                fill="url(#hg2)" opacity="0.8" />
-              <path d="M18 14 C16 16 15 18 15 21 C15 24 16.5 26 18 26 C19.5 26 21 24 21 21 C21 18 20 16 18 14Z"
-                fill="url(#hg3)" />
-              <defs>
-                <linearGradient id="hg" x1="0" y1="0" x2="36" y2="36">
-                  <stop stopColor="#ff2200" /><stop offset="1" stopColor="#ffb300" />
-                </linearGradient>
-                <linearGradient id="hg2" x1="18" y1="6" x2="18" y2="30" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#ff6a00" stopOpacity="0.3" /><stop offset="1" stopColor="#ff2200" stopOpacity="0.7" />
-                </linearGradient>
-                <linearGradient id="hg3" x1="18" y1="14" x2="18" y2="26" gradientUnits="userSpaceOnUse">
-                  <stop stopColor="#ffe566" /><stop offset="1" stopColor="#ff6a00" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div>
           <div>
             <div className="header-title">CROWDSAFE</div>
             <div className="header-subtitle">CROWD DENSITY MONITOR · v2.0</div>
@@ -470,7 +450,7 @@ export default function App() {
           flex: 1;
           overflow-y: auto;
           padding: 6px 0;
-          max-height: 220px;
+          min-height: 0;
         }
         .al-empty {
           padding: 20px 12px;
@@ -539,7 +519,7 @@ export default function App() {
         }
         .zg-cell {
           position: relative;
-          height: 60px;
+          height: 44px;
           border-radius: 6px;
           border: 1px solid var(--glass-border);
           overflow: hidden;
